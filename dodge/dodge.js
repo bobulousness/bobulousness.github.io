@@ -12,9 +12,9 @@ Dodge.Play.prototype = {
     console.log("%c--- booting ---\n compliments of urmum");
   },
   preload:function (){
-    this.load.image('background', 'assets/ocstrm.png');
-    this.load.spritesheet('obj', 'assets/blbrd.png', 31, 67, 1);
-    this.load.spritesheet('player', 'assets/arcr.png', 84, 51, 23);
+    this.load.image('background', 'ocstrm.png');
+    this.load.spritesheet('obj', 'blbrd.png', 31, 67, 1);
+    this.load.spritesheet('player', 'arcr.png', 84, 51, 23);
   },
 
   create: function () {
