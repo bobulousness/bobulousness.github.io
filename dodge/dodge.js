@@ -21,7 +21,7 @@ Dodge.Play.prototype = {
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
     //background
-    this.background = this.add.tileSprite(0,0,320,568,'background');
+    this.background = this.add.tileSprite(1,1,320,568,'background');
     this.background.autoScroll(50,0);
     this.background.scale.set(1);
 
@@ -57,11 +57,11 @@ Dodge.Play.prototype = {
      
     }
     //movement towards player
-    if (this.obj.x > this.player.velocity.x) {
-      this.obj.x -= 1;
+    if (this.obj.velocity.x > this.player.velocity.x) {
+      this.obj.velocity.x -= 1;
     } 
-    if (this.obj.x < this.player.velocity.x) {
-      this.obj.x += 1;
+    if (this.obj.velocity.x < this.player.velocity.x) {
+      this.obj.velocity.x += 1;
     }
 
 
