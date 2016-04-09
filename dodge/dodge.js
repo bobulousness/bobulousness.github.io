@@ -38,8 +38,8 @@ Dodge.Play.prototype = {
     //player
     this.player = this.add.sprite(100,400,'player');
     this.player.anchor.setTo(0.5, 0.5);
-    this.player.animations.add('blink');
-    this.player.animations.play('blink', 2, true);
+    //this.player.animations.add('blink');
+    //this.player.animations.play('blink', 2, true);
     game.physics.arcade.enable(this.player);
     this.player.body.collideWorldBounds = true
     this.player.body.bounce.setTo(0.3);
