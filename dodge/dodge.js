@@ -82,11 +82,11 @@ Dodge.Play.prototype = {
       this.player.x += 5;
     };
     game.physics.arcade.collide(this.obj, this.player, this.handleCollision);
-  }
+  },
   handleCollision: function(){
-    //console.log ("YA GOOFED");
-    //game.state.start('play');
-  //}
+    console.log ("YA GOOFED");
+    game.state.start('play');
+  }
 };
 //----------------------------------------------------------------------------------------
 var game = new Phaser.Game(320,568);
