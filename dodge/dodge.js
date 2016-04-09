@@ -86,7 +86,7 @@ Dodge.Play.prototype = {
   //handleCollision: function(){
     //console.log ("YA GOOFED");
     //game.state.start('play');
-  }
+  //}
 };
 //----------------------------------------------------------------------------------------
 var game = new Phaser.Game(320,568);
