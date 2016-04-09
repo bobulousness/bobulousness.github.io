@@ -60,9 +60,9 @@ Dodge.Play.prototype = {
     //if (this.obj.x > this.player.x) {
       //this.obj.velocity.x -= 1;
     //} 
-    if (this.obj.x < this.player.x) {
-      this.obj.velocity.x += 1;
-    }
+    //if (this.obj.x < this.player.x) {
+     // this.obj.velocity.x += 1;
+    //}
 
 
     //obj x boundaries
