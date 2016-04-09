@@ -52,7 +52,7 @@ Dodge.Play.prototype = {
   update: function () {
        
     if ( this.obj.y > 400){
-      this.obj.y = 10
+      this.obj.y = 10;
       this.obj.x = game.rnd.integerInRange(31,289);
      
     }
