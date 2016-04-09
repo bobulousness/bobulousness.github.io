@@ -85,7 +85,7 @@ Dodge.Play.prototype = {
   }
   handleCollision: function() {
     console.log ("YA GOOFED");
-    game.state.start('play')
+    game.state.start('play');
   }
 };
 //----------------------------------------------------------------------------------------
