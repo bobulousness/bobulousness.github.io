@@ -29,7 +29,7 @@ Dodge.Play.prototype = {
     this.obj = this.add.sprite(31,67,'obj');
     this.obj.anchor.setTo(0.5, 0.5);
     game.physics.arcade.enable(this.obj);
-    this.body.velocity.y = 10
+    this.body.velocity.y = 10;
     /*
     this.obj.animations.add('blink');
     this.obj.animations.play('blink', 2, true);
