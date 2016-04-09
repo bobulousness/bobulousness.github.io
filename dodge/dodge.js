@@ -83,7 +83,7 @@ Dodge.Play.prototype = {
     };
     game.physics.arcade.collide(this.obj, this.player, this.handleCollision);
   }
-  //handleCollision: function(){
+  handleCollision: function(){
     //console.log ("YA GOOFED");
     //game.state.start('play');
   //}
