@@ -57,10 +57,10 @@ Dodge.Play.prototype = {
      
     }
     //movement towards player
-    if (this.obj.x > this.player.x) {
+    if (this.obj.x > this.player.velocity.x) {
       this.obj.x -= 1;
     } 
-    if (this.obj.x < this.player.x) {
+    if (this.obj.x < this.player.velocity.x) {
       this.obj.x += 1;
     }
 
