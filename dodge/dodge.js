@@ -29,7 +29,7 @@ Dodge.Play.prototype = {
     this.obj = this.add.sprite(31,67,'obj');
     this.obj.anchor.setTo(0.5, 0.5);
     game.physics.arcade.enable(this.obj);
-    this.body.velocity.y = 10;
+    this.obj.body.velocity.y = 10;
     /*
     this.obj.animations.add('blink');
     this.obj.animations.play('blink', 2, true);
@@ -75,7 +75,7 @@ Dodge.Play.prototype = {
       this.obj.y = 10;
     }
     //player movement
-    if (this.cursors.left.isDown){
+    if (this.cursors.keyboard.left.isDown){
       this.player.x -= 4;
     }
     if (this.cursors.right.isDown) {
