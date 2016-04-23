@@ -75,9 +75,9 @@ Dodge.Play.prototype = {
       this.obj.y = 10;
     }
     //player movement
-    if (this.cursors.keyboard.left.isDown){
+    /*if (this.cursors.keyboard.left.isDown){
       this.player.x -= 4;
-    }
+    }*/
     if (this.cursors.right.isDown) {
       this.player.x += 5;
     };
