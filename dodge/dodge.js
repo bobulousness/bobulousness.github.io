@@ -77,10 +77,10 @@ Dodge.Play.prototype = {
     //player movement
     if (this.cursors.left.isDown) {
       this.player.x -= 4;
-    },
+    }
     if (this.cursors.right.isDown) {
       this.player.x += 5;
-    },
+    }
     game.physics.arcade.collide(this.obj, this.player, this.handleCollision);
   },
   handleCollision: function(){
