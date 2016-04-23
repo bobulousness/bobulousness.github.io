@@ -3,9 +3,16 @@
 
 var random = Math.floor((Math.random() * 289) + 31);
 
-
+var 
 
 var Dodge = {};
+Dodge.Title = function () {};
+Dodge.Title.prototype = {
+  preload:function () {
+    this.load.image('background', 'ocstrm.png');
+    this.load.image('prsstrt','prsstrt.png');
+  }
+}
 Dodge.Play = function () {};
 Dodge.Play.prototype = {
   init: function() {
