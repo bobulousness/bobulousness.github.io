@@ -8,12 +8,14 @@ killme.Play = function () {}
     //creating variables
   }
   preload: funtction() {
-  //loading images
+    //loading images
   }
   create: function() {
-  //creating the game scene
+    cursors = game.input.keyboard.createCursorKeys();
+    
+    //creating the game scene
   }
   update: function() {
-  // Game logic
+    // Game logic
   }
 }
