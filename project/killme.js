@@ -9,9 +9,9 @@ killme.Play = function () {}
   }
   preload: function() {
     //loading images
-    this.load.image('bckgr','strsky.gif');
-    this.load.image('blck','blck.gif');
-    this.load.image('sqhd','sqhd.gif',84, 51, 1);
+    this.load.image('bckgr','strsky.png');
+    this.load.image('blck1','blck.png');
+    this.load.image('sqhd','sqhd.png');
   }
   create: function() {
     game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -20,6 +20,10 @@ killme.Play = function () {}
     //background
     this.bckgr = this.add.tileSprite(1,1,800,600,'bckgr');
     this.bckgr.scale.set(1);
+    
+    //block
+    
+    game.physics.arcade.enable(this.blck);
     //creating the game scene
   }
   update: function() {
