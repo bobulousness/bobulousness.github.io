@@ -17,8 +17,8 @@ killme.Play.prototype = {
     
     cursors = game.input.keyboard.createCursorKeys();
     //background
-    this.bckgr = this.add.sprite(1,1,'bckgr');
-    this.bckgr.scale.set(1);
+    this.background = this.add.sprite(800,600,'bckgr');
+    this.background.scale.set(1);
     
     //block
     
