@@ -5,13 +5,13 @@ killme.Play = function () {};
 killme.Play.prototype = {
   init: function() {
     //creating variables
-  }
+  },
   preload: function() {
     //loading images
     this.load.spritesheet('bckgr', 'strsky.png', 800, 600, 1);
     this.load.image('blck1', 'blck.png');
     this.load.image('sqhd', 'sqhd.png');
-  }
+  },
   create: function() {
     
     cursors = game.input.keyboard.createCursorKeys();
@@ -24,12 +24,8 @@ killme.Play.prototype = {
     
     game.physics.arcade.enable(this.blck);
     //creating the game scene
-  }
+  },
   update: function() {
     // Game logic
-  }
+  },
 }
-//----------------------------------------------------------------------
-var game = new Phaser.Game(800,600);
-game.state.add('play', killme.Play);
-game.state.start('play');
