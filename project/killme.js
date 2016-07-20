@@ -2,8 +2,7 @@
 
 var killme = {};
 killme.Play = function () {};
-
-  killme.Play.prototype = {
+killme.Play.prototype = {
   init: function() {
     //creating variables
   }
@@ -18,7 +17,7 @@ killme.Play = function () {};
     
     cursors = game.input.keyboard.createCursorKeys();
     //background
-    this.bckgr = this.add.tileSprite(1,1,800,600,'bckgr');
+    this.bckgr = this.add.sprite(1,1,'bckgr');
     this.bckgr.scale.set(1);
     
     //block
