@@ -18,7 +18,7 @@ killme.Play = function () {}
     
     cursors = game.input.keyboard.createCursorKeys();
     //background
-    this.bckgr = this.add.tileSprite(1,1,320,568,'bckgr');
+    this.bckgr = this.add.tileSprite(1,1,800,600,'bckgr');
     this.bckgr.scale.set(1);
     //creating the game scene
   }
