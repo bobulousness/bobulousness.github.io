@@ -7,6 +7,11 @@
     <style>body { background: white; padding: 0px; margin: 0px; }</style>
     <script src="killme.js"></script>
     <script src="phaser.js"></script>
+    <script>
+        var game = new Phaser.Game(800,600);
+        game.state.add('play', killme.Play);
+        game.state.start('play');
+    </script>
   </head>
   <body>hi</body>
 </html>
