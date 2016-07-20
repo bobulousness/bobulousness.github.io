@@ -26,3 +26,7 @@ killme.Play = function () {}
     // Game logic
   }
 }
+//----------------------------------------------------------------------
+var game = new Phaser.Game(800,600);
+game.state.add('play', project.Play);
+game.state.start('play');
