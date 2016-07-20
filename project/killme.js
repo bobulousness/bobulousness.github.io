@@ -8,7 +8,7 @@ killme.Play.prototype = {
   }
   preload: function() {
     //loading images
-    this.load.image('bckgr','strsky.png');
+    this.load.image('bckgr','strsky.png',800,600,10);
     this.load.image('blck1','blck.png');
     this.load.image('sqhd','sqhd.png');
   }
@@ -17,7 +17,7 @@ killme.Play.prototype = {
     
     cursors = game.input.keyboard.createCursorKeys();
     //background
-    this.background = this.add.sprite(800,600,'bckgr');
+    this.background = this.add.tileSprite(1,1,800,600,'bckgr');
     this.background.scale.set(1);
     
     //block
