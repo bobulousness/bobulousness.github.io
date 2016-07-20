@@ -32,5 +32,5 @@ killme.Play = function () {}
 }
 //----------------------------------------------------------------------
 var game = new Phaser.Game(800,600);
-game.state.add('killme', killme.Play);
-game.state.start('killme');
+game.state.add('play', killme.Play);
+game.state.start('play');
