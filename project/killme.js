@@ -13,12 +13,11 @@ killme.Play.prototype = {
     this.load.image('sqhd','sqhd.png');
   }
   create: function() {
-    game.physics.startSystem(Phaser.Physics.ARCADE);
     
     cursors = game.input.keyboard.createCursorKeys();
     //background
     this.background = this.add.sprite(800,600,'bckgr');
-    this.background.scale.set(1);
+   
     
     //block
     
