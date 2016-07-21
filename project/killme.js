@@ -1,6 +1,6 @@
 'use strict';
 
-var killme = {};
+
 killme.Play = function () {};
 killme.Play.prototype = {
   init: function() {
