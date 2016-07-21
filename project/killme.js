@@ -19,6 +19,9 @@ killme.Play.prototype = {
     this.background = this.add.tileSprite(1,1,800,600,'bckgr', 10);
     
     //block
+    this.blck = this.add.sprite(30, 45, 'blck');
+    this.blck.anchor.setTo(0.5, 0.5);
+    game.physics.arcade.enable(this.obj);
     
     game.physics.arcade.enable(this.blck);
     //creating the game scene
