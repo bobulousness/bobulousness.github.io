@@ -12,6 +12,7 @@ killme.Play.prototype = {
     this.load.image('blck1', 'blck.png');
     this.load.image('sqhd', 'sqhd.png');
   },
+  var cursors;
   create: function() {
     
     cursors = game.input.keyboard.createCursorKeys();
