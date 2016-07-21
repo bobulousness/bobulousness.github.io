@@ -12,10 +12,9 @@ killme.Play.prototype = {
     this.load.image('blck1', 'blck.png');
     this.load.image('sqhd', 'sqhd.png');
   },
-  var cursors = {};
   create: function() {
     
-    cursors = game.input.keyboard.createCursorKeys();
+    this.cursors = game.input.keyboard.createCursorKeys();
     //background
     this.background = this.add.tileSprite(1,1,800,600,'bckgr');
     this.background.autoScroll(0,0);
