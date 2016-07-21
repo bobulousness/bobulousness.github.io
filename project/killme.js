@@ -16,7 +16,7 @@ killme.Play.prototype = {
     
     this.cursors = game.input.keyboard.createCursorKeys();
     //background
-    this.background = this.add.tileSprite(1,1,800,600,'bckgr');
+    this.background = this.add.tileSprite(1,1,800,600,'bckgr', 10);
     this.background.autoScroll(0,0);
     this.background.scale.set(1);
    
