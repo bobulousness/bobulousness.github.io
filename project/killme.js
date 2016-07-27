@@ -49,11 +49,11 @@ vert(x, y) {
     //this.blck5.anchor.setTo(1.0,1.0);
     this.blck.anchor.setTo(1.0,1.0);
     game.physics.arcade.enable(this.blck);
-    game.physics.arcade.enable(this.blck1);
+    /*game.physics.arcade.enable(this.blck1);
     game.physics.arcade.enable(this.blck2);
     game.physics.arcade.enable(this.blck3);
     game.physics.arcade.enable(this.blck4);
-    game.physics.arcade.enable(this.blck5);
+    game.physics.arcade.enable(this.blck5);*/
     //creating the game scene
   }
   
