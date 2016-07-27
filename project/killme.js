@@ -41,7 +41,12 @@ vert(x, y) {
     //block
     this.hort(400,300);
     this.vert(400,300);
-    
+    this.blck1.achor.setTo(1.0,1.0);
+    this.blck2.achor.setTo(1.0,1.0);
+    this.blck3.achor.setTo(1.0,1.0);
+    this.blck4.achor.setTo(1.0,1.0);
+    this.blck5.achor.setTo(1.0,1.0);
+    this.blck.achor.setTo(1.0,1.0);
     game.physics.arcade.enable(this.blck);
     game.physics.arcade.enable(this.blck1);
     game.physics.arcade.enable(this.blck2);
