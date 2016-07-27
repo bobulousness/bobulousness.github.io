@@ -30,7 +30,7 @@ class PlayState {
     //block
     
    
-    hort(500,360);
+    this.hort(500,360);
     
     
     this.blck.anchor.setTo(0.5, 0.5);
