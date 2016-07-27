@@ -31,10 +31,6 @@ class PlayState {
     
    
     this.hort(500,360);
-    
-    
-    this.blck.anchor.setTo(0.5, 0.5);
-    
     game.physics.arcade.enable(this.blck);
     //creating the game scene
   }
