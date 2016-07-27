@@ -13,7 +13,12 @@ class PlayState {
   }
       //functionm for horizontal block placement
 
-
+ hort(x, y) {
+      this.blck2 = this.add.sprite(300 + 32,23,'blck');
+      this.blck1 = this.add.sprite(x + 64,y,'blck');
+      this.blck = this.add.sprite(x,y,'blck');
+  }
+    
   create() {
     this.cursors = game.input.keyboard.createCursorKeys();
     
@@ -23,21 +28,22 @@ class PlayState {
     //player
     this.player = this.add.sprite(300,240, 'sqhd');
     //block
-    function hort(x, y) {
-
-      this.blck2 = this.add.sprite(300 + 32,23,'blck');
-      this.blck1 = this.add.sprite(x + 64,y,'blck');
-      this.blck = this.add.sprite(x,y,'blck');
-    }
+    
+   
     hort(500,360);
+    
+    this.blck = this.add.sprite(,y,'blck');
     this.blck.anchor.setTo(0.5, 0.5);
     
     game.physics.arcade.enable(this.blck);
     //creating the game scene
   }
+  
   update() {
     // Game logic
   }
+  
+ 
 }
 var game = new Phaser.Game(800,600);
 game.state.add('Play', PlayState);
