@@ -58,6 +58,12 @@ vert(x, y) {
   
   update() {
     // Game logic
+        if (this.cursors.left.isDown) {
+      this.player.x -= 4;
+    };
+    if (this.cursors.right.isDown) {
+      this.player.x += 5;
+    };
   }
   
  
