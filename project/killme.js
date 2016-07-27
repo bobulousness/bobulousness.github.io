@@ -13,11 +13,11 @@ class PlayState {
   
 
   create() {
-    /*hort: function(x, y) {
+    hort: function(x, y) {
       this.blck = this.add.sprite(x, y, 'blck1');
       this.blck1 = this.add.sprite(x += 32, y, 'blck1');
       this.blck2 = this.add.sprite(x += 64, y, 'blck1');
-  }*/
+  }
     
     this.cursors = game.input.keyboard.createCursorKeys();
     //background
@@ -25,7 +25,7 @@ class PlayState {
     
     //block
 
-    //hort(500,360);
+    hort(500,360);
     this.blck.anchor.setTo(0.5, 0.5);
     
     game.physics.arcade.enable(this.blck);
