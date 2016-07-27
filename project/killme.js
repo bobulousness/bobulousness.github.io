@@ -15,7 +15,7 @@ class PlayState {
 
  hort(x, y) {
       this.blck2 = this.add.sprite(x + 32,y,'blck');
-      this.blck1 = this.add.sprite(x - 32,y,'blck');
+      this.blck = this.add.sprite(x - 32,y,'blck');
       this.blck = this.add.sprite(x,y,'blck');
   }
 vert(x, y) {
@@ -66,7 +66,7 @@ vert(x, y) {
       this.player.x += 5;
     };
   }
-  
+  //game.physics.arcade.collide(this.blck)
  
 }
 var game = new Phaser.Game(800,600);
