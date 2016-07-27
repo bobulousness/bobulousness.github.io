@@ -32,7 +32,7 @@ class PlayState {
    
     hort(500,360);
     
-    this.blck = this.add.sprite(,y,'blck');
+    
     this.blck.anchor.setTo(0.5, 0.5);
     
     game.physics.arcade.enable(this.blck);
