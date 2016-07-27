@@ -13,20 +13,19 @@ class PlayState {
   }
       //functionm for horizontal block placement
 
-    function hort(x, y) {
-      this.blck = this.add.sprite(x, y, 'blck1');
-      this.blck1 = this.add.sprite(x += 32, y, 'blck1');
-      this.blck2 = this.add.sprite(x += 64, y, 'blck1');
-    }
+
   create() {
 
-    
     this.cursors = game.input.keyboard.createCursorKeys();
     //background
     this.background = this.add.tileSprite(1,1,800,600,'bckgr', 10);
     
     //block
-
+    function hort(x, y) {
+      this.blck = this.add.sprite(x, y, 'blck1');
+      this.blck1 = this.add.sprite(x += 32, y, 'blck1');
+      this.blck2 = this.add.sprite(x += 64, y, 'blck1');
+    }
     hort(500,360);
     this.blck.anchor.setTo(0.5, 0.5);
     
