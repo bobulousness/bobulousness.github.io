@@ -1,12 +1,10 @@
 'use strict';
+class PlayState {
 
-var killme = { };
-killme.Play = function () {};
-killme.Play.prototype = {
-  init: function() {
+  init() {
     //creating variables
   },
-  preload: function() {
+  preload() {
     //loading images
     this.load.spritesheet('bckgr', 'strsky.png', 800, 600, 10);
     this.load.image('blck1', 'blck.png');
@@ -14,8 +12,8 @@ killme.Play.prototype = {
   },
   
 
-  /*create: function() {
-    hort: function(x, y) {
+  create() {
+    /*hort: function(x, y) {
       this.blck = this.add.sprite(x, y, 'blck1');
       this.blck1 = this.add.sprite(x += 32, y, 'blck1');
       this.blck2 = this.add.sprite(x += 64, y, 'blck1');
@@ -33,7 +31,10 @@ killme.Play.prototype = {
     game.physics.arcade.enable(this.blck);
     //creating the game scene
   },
-  update: function() {
+  update() {
     // Game logic
   },
 }
+var game = new Phaser.Game(800,600);
+game.state.add('Play', PlayState);
+game.state.start('Play');
