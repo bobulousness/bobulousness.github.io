@@ -8,7 +8,7 @@ class PlayState {
   preload() {
     //loading images
     this.load.spritesheet('bckgr', 'strsky.png', 800, 600, 10);
-    this.load.image('blck1', 'blck.png');
+    this.load.image('blck', 'blck.png');
     this.load.image('sqhd', 'sqhd.png');
   }
       //functionm for horizontal block placement
@@ -20,11 +20,13 @@ class PlayState {
     //background
     this.background = this.add.tileSprite(1,1,800,600,'bckgr', 10);
     
+    //player
+    this.player = this.add.sprite(300,240, 'sqhd');
     //block
     function hort(x, y) {
-      this.blck = this.add.sprite(x, y, 'blck1');
-      this.blck1 = this.add.sprite(x += 32, y, 'blck1');
-      this.blck2 = this.add.sprite(x += 64, y, 'blck1');
+      this.blck = this.add.sprite(x, y, 'blck');
+      this.blck1 = this.add.sprite(x += 32, y, 'blck');
+      this.blck2 = this.add.sprite(x += 64, y, 'blck');
     }
     hort(500,360);
     this.blck.anchor.setTo(0.5, 0.5);
