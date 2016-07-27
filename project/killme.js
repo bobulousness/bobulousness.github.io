@@ -15,7 +15,7 @@ class PlayState {
 
  hort(x, y) {
       this.blck = this.add.sprite(x + 32,y,'blck');
-      this.blck = this.add.sprite(x - 32,y,'blck');
+      //this.blck = this.add.sprite(x - 32,y,'blck');
       this.blck = this.add.sprite(x,y,'blck');
   }
 vert(x, y) {
