@@ -14,7 +14,7 @@ class PlayState {
       //functionm for horizontal block placement
 
  hort(x, y) {
-      this.blck2 = this.add.sprite(x + 32,y,'blck');
+      this.blck = this.add.sprite(x + 32,y,'blck');
       this.blck = this.add.sprite(x - 32,y,'blck');
       this.blck = this.add.sprite(x,y,'blck');
   }
@@ -43,10 +43,10 @@ vert(x, y) {
     this.hort(400,300);
     //this.vert(400,300);
     //this.blck1.anchor.setTo(1.0,1.0);
-    this.blck2.anchor.setTo(1.0,1.0);
-    this.blck3.anchor.setTo(1.0,1.0);
-    this.blck4.anchor.setTo(1.0,1.0);
-    this.blck5.anchor.setTo(1.0,1.0);
+    //this.blck2.anchor.setTo(1.0,1.0);
+    //this.blck3.anchor.setTo(1.0,1.0);
+    //this.blck4.anchor.setTo(1.0,1.0);
+    //this.blck5.anchor.setTo(1.0,1.0);
     this.blck.anchor.setTo(1.0,1.0);
     game.physics.arcade.enable(this.blck);
     game.physics.arcade.enable(this.blck1);
