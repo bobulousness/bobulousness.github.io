@@ -15,8 +15,13 @@ class PlayState {
 
  hort(x, y) {
       this.blck2 = this.add.sprite(x + 32,y,'blck');
-      this.blck1 = this.add.sprite(x + 64,y,'blck');
+      this.blck1 = this.add.sprite(x - 32,y,'blck');
       this.blck = this.add.sprite(x,y,'blck');
+  }
+vert(x, y) {
+      this.blck3 = this.add.sprite(x,y + 32,'blck');
+      this.blck4 = this.add.sprite(x,y - 32,'blck');
+      this.blck5 = this.add.sprite(x,y,'blck');
   }
     
   create() {
@@ -28,9 +33,8 @@ class PlayState {
     //player
     this.player = this.add.sprite(300,240, 'sqhd');
     //block
-    
-   
-    this.hort(500,360);
+    this.hort(400,300);
+    this.vert(400,300)
     game.physics.arcade.enable(this.blck);
     //creating the game scene
   }
