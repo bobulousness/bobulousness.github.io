@@ -15,16 +15,16 @@ class PlayState {
 
 
   create() {
-
+    this.cursors = game.input.keyboard.createCursorKeys();
     
     //background
     this.background = this.add.tileSprite(1,1,800,600,'bckgr', 10);
     
     //player
-    this.player = this.add.sprite//(300,240, 'sqhd');
+    this.player = this.add//.sprite(300,240, 'sqhd');
     //block
     function hort(x, y) {
-      this.cursors = game.input.keyboard.createCursorKeys();
+
       this.blck2 = this.add.sprite(300 + 32,23,'blck');
       this.blck1 = this.add.sprite(x + 64,y,'blck');
       this.blck = this.add.sprite(x,y,'blck');
