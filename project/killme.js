@@ -1,4 +1,4 @@
-'use strict';
+
 class PlayState {
 
   init() {
@@ -21,7 +21,7 @@ class PlayState {
     this.background = this.add.tileSprite(1,1,800,600,'bckgr', 10);
     
     //player
-    this.player = this.add.//.sprite(300,240, 'sqhd');
+    this.player = this.add.sprite(300,240, 'sqhd');
     //block
     function hort(x, y) {
 
