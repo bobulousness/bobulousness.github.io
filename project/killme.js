@@ -34,7 +34,8 @@ vert(x, y) {
     this.player = this.add.sprite(300,240, 'sqhd');
     //block
     this.hort(400,300);
-    this.vert(400,300)
+    this.vert(400,300);
+    this.block.anchor.setTo(1.0,1.0);
     game.physics.arcade.enable(this.blck);
     //creating the game scene
   }
