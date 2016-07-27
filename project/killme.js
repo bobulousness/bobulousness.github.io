@@ -24,7 +24,7 @@ class PlayState {
     this.player = this.add.sprite(300,240, 'sqhd');
     //block
     function hort(x, y) {
-      this.blck2 = this.add.sprite//(x += 32, y, 'blck');
+      this.blck2 = this.add.sprite(x += 32, y, 'blck');
       this.blck1 = this.add.sprite(x += 64, y, 'blck');
       this.blck = this.add.sprite(x, y, 'blck');
     }
