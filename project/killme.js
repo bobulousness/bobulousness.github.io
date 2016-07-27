@@ -14,7 +14,7 @@ class PlayState {
       //functionm for horizontal block placement
 
  hort(x, y) {
-      this.blck2 = this.add.sprite(300 + 32,23,'blck');
+      this.blck2 = this.add.sprite(x + 32,y,'blck');
       this.blck1 = this.add.sprite(x + 64,y,'blck');
       this.blck = this.add.sprite(x,y,'blck');
   }
