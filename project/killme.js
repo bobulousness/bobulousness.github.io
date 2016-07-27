@@ -25,6 +25,9 @@ vert(x, y) {
   }
     
   create() {
+    //physics
+    game.physics.startSystem(Phaser.Physics.ARCADE);
+    //keys
     this.cursors = game.input.keyboard.createCursorKeys();
     
     //background
@@ -32,11 +35,19 @@ vert(x, y) {
     
     //player
     this.player = this.add.sprite(300,240, 'sqhd');
+    game.physics.arcade.enable(this.player);
+    this.player.body.collideWorldBounds = true
+    this.player.body.bounce.setTo(0.3);
     //block
     this.hort(400,300);
     this.vert(400,300);
-    this.blck.anchor.setTo(1.0,1.0);
+    
     game.physics.arcade.enable(this.blck);
+    game.physics.arcade.enable(this.blck1);
+    game.physics.arcade.enable(this.blck2);
+    game.physics.arcade.enable(this.blck3);
+    game.physics.arcade.enable(this.blck4);
+    game.physics.arcade.enable(this.blck5);
     //creating the game scene
   }
   
