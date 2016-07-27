@@ -41,8 +41,8 @@ vert(x, y) {
     this.player.body.drag.setTo(3000);
     //block
     this.hort(400,300);
-    this.vert(400,300);
-    this.blck1.anchor.setTo(1.0,1.0);
+    //this.vert(400,300);
+    //this.blck1.anchor.setTo(1.0,1.0);
     this.blck2.anchor.setTo(1.0,1.0);
     this.blck3.anchor.setTo(1.0,1.0);
     this.blck4.anchor.setTo(1.0,1.0);
