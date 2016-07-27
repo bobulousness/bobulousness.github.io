@@ -14,12 +14,12 @@ killme.Play.prototype = {
   },
   
 
-  create: function() {
+  /*create: function() {
     hort: function(x, y) {
       this.blck = this.add.sprite(x, y, 'blck1');
       this.blck1 = this.add.sprite(x += 32, y, 'blck1');
       this.blck2 = this.add.sprite(x += 64, y, 'blck1');
-  },
+  },*/
     
     this.cursors = game.input.keyboard.createCursorKeys();
     //background
@@ -27,9 +27,8 @@ killme.Play.prototype = {
     
     //block
 
-    hort(500,360);
+    //hort(500,360);
     this.blck.anchor.setTo(0.5, 0.5);
-    game.physics.arcade.enable(this.obj);
     
     game.physics.arcade.enable(this.blck);
     //creating the game scene
