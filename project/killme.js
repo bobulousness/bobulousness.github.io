@@ -11,10 +11,10 @@ class PlayState {
     this.load.image('sqhd', 'sqhd.png');
   }
       //functionm for horizontal block placement
-    hort(x, y) {
-      this.blck = this.add.sprite(x, y, 'blck1');
-      this.blck1 = this.add.sprite(x += 32, y, 'blck1');
-      this.blck2 = this.add.sprite(x += 64, y, 'blck1');
+  var hort = hort(x, y) {
+    this.blck = this.add.sprite(x, y, 'blck1');
+    this.blck1 = this.add.sprite(x += 32, y, 'blck1');
+    this.blck2 = this.add.sprite(x += 64, y, 'blck1');
   }
 
   create() {
