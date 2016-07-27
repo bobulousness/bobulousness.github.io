@@ -35,7 +35,7 @@ vert(x, y) {
     //block
     this.hort(400,300);
     this.vert(400,300);
-    this.block.anchor.setTo(1.0,1.0);
+    this.blck.anchor.setTo(1.0,1.0);
     game.physics.arcade.enable(this.blck);
     //creating the game scene
   }
