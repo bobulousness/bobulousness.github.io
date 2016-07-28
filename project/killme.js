@@ -10,6 +10,8 @@ class PlayState {
     this.load.spritesheet('bckgr', 'strsky.png', 800, 600, 10);
     this.load.image('blck', 'blck.png');
     this.load.image('sqhd', 'sqhd.png');
+    this.load.image('stpvrt','blckstpvrt.png');
+    this.load.image('stphrt','blckstphrt.png');
   }
       //functionm for horizontal block placement
 
