@@ -19,13 +19,13 @@ class PlayState {
       this.blck = this.add.sprite(x - 64,y - 32,'blck');
       this.blck = this.add.sprite(x - 32,y - 32,'blck');
       this.blck = this.add.sprite(x,y - 32,'blck');
-      this.stpvrt = this.add.sprite(x - 64, y - 33, 'stpvrt');
+      this.stpvrt = this.add.sprite(x - 64, y - 31, 'stpvrt');
   }
 vert(x, y) {
       this.blck1 = this.add.sprite(x - 32,y - 32,'blck');
       this.blck1 = this.add.sprite(x - 32,y - 64,'blck');
       this.blck1 = this.add.sprite(x - 32,y,'blck');
-      this.stphrt = this.add.sprite(x - 33, y - 64, 'stphrt');
+      this.stphrt = this.add.sprite(x - 31, y - 64, 'stphrt');
   }
     
   create() {
