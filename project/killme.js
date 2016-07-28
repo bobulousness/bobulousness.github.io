@@ -14,14 +14,14 @@ class PlayState {
       //functionm for horizontal block placement
 
  hort(x, y) {
-      this.blck = this.add.sprite(x + 32,y,'blck');
-      this.blck = this.add.sprite(x - 32,y,'blck');
-      this.blck = this.add.sprite(x,y,'blck');
+      this.blck = this.add.sprite(x + 32,y - 32,'blck');
+      this.blck = this.add.sprite(x - 32,y - 32,'blck');
+      this.blck = this.add.sprite(x,y - 32,'blck');
   }
 vert(x, y) {
-      this.blck1 = this.add.sprite(x,y - 32,'blck');
-      this.blck1 = this.add.sprite(x,y - 64,'blck');
-      this.blck1 = this.add.sprite(x,y,'blck');
+      this.blck1 = this.add.sprite(x - 32,y - 32,'blck');
+      this.blck1 = this.add.sprite(x - 32,y - 64,'blck');
+      this.blck1 = this.add.sprite(x - 32,y,'blck');
   }
     
   create() {
