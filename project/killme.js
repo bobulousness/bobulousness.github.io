@@ -16,11 +16,14 @@ class PlayState {
       //functionm for horizontal block placement
 
  hort(x, y) {
+      //visual blocks
       this.blck = this.add.sprite(x - 64,y - 32,'blck');
       this.blck = this.add.sprite(x - 32,y - 32,'blck');
       this.blck = this.add.sprite(x,y - 32,'blck');
+      //left and rights side bumpers
       this.stpvrt = this.add.sprite(x - 63, y - 31, 'stpvrt');
       this.stpvrt = this.add.sprite(x + 31, y - 31, 'stpvrt');
+      //top bumpers
       this.stphrt = this.add.sprite(x - 31, y - 31, 'stphrt');
       this.stphrt = this.add.sprite(x - 63, y - 31, 'stphrt');
       this.stphrt = this.add.sprite(x + 1, y - 31, 'stphrt');
@@ -28,14 +31,25 @@ class PlayState {
       this.stphrt = this.add.sprite(x - 10, y - 31, 'stphrt');
   }
 vert(x, y) {
+  //visual blocks
       this.blck1 = this.add.sprite(x - 32,y - 32,'blck');
       this.blck1 = this.add.sprite(x - 32,y - 64,'blck');
       this.blck1 = this.add.sprite(x - 32,y,'blck');
+      //top and bottom bumpers
       this.stphrt = this.add.sprite(x - 31, y - 63, 'stphrt');
       this.stphrt = this.add.sprite(x - 31, y + 31, 'stphrt');
+      //left side bumpers
       this.stpvrt = this.add.sprite(x - 31, y - 31, 'stpvrt');
       this.stpvrt = this.add.sprite(x - 31, y, 'stpvrt');
       this.stpvrt = this.add.sprite(x - 31, y - 63, 'stpvrt');
+      this.stpvrt = this.add.sprite(x - 31, y - 51, 'stpvrt');
+      this.stpvrt = this.add.sprite(x - 31, y - 10, 'stpvrt');
+      //right side bumpers
+      this.stpvrt = this.add.sprite(x + 1, y - 31, 'stpvrt');
+      this.stpvrt = this.add.sprite(x + 1, y - 63, 'stpvrt');
+      this.stpvrt = this.add.sprite(x + 1, y, 'stpvrt');
+      this.stpvrt = this.add.sprite(x + 1, y - 51, 'stpvrt');
+      this.stpvrt = this.add.sprite(x + 1, y - 10, 'stpvrt');
   }
     
   create() {
