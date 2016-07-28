@@ -15,12 +15,12 @@ class PlayState {
 
  hort(x, y) {
       this.blck = this.add.sprite(x + 32,y,'blck');
-      //this.blck = this.add.sprite(x - 32,y,'blck');
-      //this.blck = this.add.sprite(x,y,'blck');
+      this.blck = this.add.sprite(x - 32,y,'blck');
+      this.blck = this.add.sprite(x,y,'blck');
   }
 vert(x, y) {
-      this.blck3 = this.add.sprite(x,y + 32,'blck');
-      this.blck4 = this.add.sprite(x,y - 32,'blck');
+      this.blck3 = this.add.sprite(x,y - 32,'blck');
+      this.blck4 = this.add.sprite(x,y - 64,'blck');
       this.blck5 = this.add.sprite(x,y,'blck');
   }
     
@@ -47,7 +47,7 @@ vert(x, y) {
     //this.blck3.anchor.setTo(1.0,1.0);
     //this.blck4.anchor.setTo(1.0,1.0);
     //this.blck5.anchor.setTo(1.0,1.0);
-    this.blck.anchor.setTo(1.0,1.0);
+
     game.physics.arcade.enable(this.blck);
     /*game.physics.arcade.enable(this.blck1);
     game.physics.arcade.enable(this.blck2);
