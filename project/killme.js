@@ -26,7 +26,7 @@ vert(x, y) {
       this.blck1 = this.add.sprite(x - 32,y - 64,'blck');
       this.blck1 = this.add.sprite(x - 32,y,'blck');
       this.stphrt = this.add.sprite(x - 31, y - 63, 'stphrt');
-      this.stphrt = this.add.sprite(x - 31, y + 1, 'stphrt');
+      this.stphrt = this.add.sprite(x - 31, y + 31, 'stphrt');
   }
     
   create() {
