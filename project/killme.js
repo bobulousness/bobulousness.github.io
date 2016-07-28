@@ -33,6 +33,7 @@ vert(x, y) {
       this.blck1 = this.add.sprite(x - 32,y,'blck');
       this.stphrt = this.add.sprite(x - 31, y - 63, 'stphrt');
       this.stphrt = this.add.sprite(x - 31, y + 31, 'stphrt');
+      this.stpvrt = this.add.sprite(x - 31, y - 31, 'stpvrt');
   }
     
   create() {
@@ -51,10 +52,10 @@ vert(x, y) {
     this.player.body.bounce.setTo(0.3);
     this.player.body.drag.setTo(3000);
     //block
-    this.hort(400,300);
-    //this.vert(400,300);
-    game.physics.arcade.enable(this.blck);
-    //game.physics.arcade.enable(this.blck1);
+    //this.hort(400,300);
+    this.vert(400,300);
+    //game.physics.arcade.enable(this.blck);
+    game.physics.arcade.enable(this.blck1);
     game.physics.arcade.enable(this.stpvrt);
     game.physics.arcade.enable(this.stphrt);
  
