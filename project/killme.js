@@ -19,9 +19,9 @@ class PlayState {
       this.blck = this.add.sprite(x,y,'blck');
   }
 vert(x, y) {
-      this.blck3 = this.add.sprite(x,y - 32,'blck');
-      this.blck4 = this.add.sprite(x,y - 64,'blck');
-      this.blck5 = this.add.sprite(x,y,'blck');
+      this.blck1 = this.add.sprite(x,y - 32,'blck');
+      this.blck1 = this.add.sprite(x,y - 64,'blck');
+      this.blck1 = this.add.sprite(x,y,'blck');
   }
     
   create() {
@@ -41,19 +41,10 @@ vert(x, y) {
     this.player.body.drag.setTo(3000);
     //block
     this.hort(400,300);
-    //this.vert(400,300);
-    //this.blck1.anchor.setTo(1.0,1.0);
-    //this.blck2.anchor.setTo(1.0,1.0);
-    //this.blck3.anchor.setTo(1.0,1.0);
-    //this.blck4.anchor.setTo(1.0,1.0);
-    //this.blck5.anchor.setTo(1.0,1.0);
-
+    this.vert(400,300);
     game.physics.arcade.enable(this.blck);
-    /*game.physics.arcade.enable(this.blck1);
-    game.physics.arcade.enable(this.blck2);
-    game.physics.arcade.enable(this.blck3);
-    game.physics.arcade.enable(this.blck4);
-    game.physics.arcade.enable(this.blck5);*/
+    game.physics.arcade.enable(this.blck1);
+ 
     //creating the game scene
   }
   
