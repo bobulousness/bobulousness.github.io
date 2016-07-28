@@ -10,8 +10,6 @@ class PlayState {
     this.load.spritesheet('bckgr', 'strsky.png', 800, 600, 10);
     this.load.image('blck', 'blck.png');
     this.load.image('sqhd', 'sqhd.png');
-    this.load.image('stpvrt','blckstpvrt.png');
-    this.load.image('stphrt', 'blckstphrt.png');
   }
       //functionm for horizontal block placement
 
@@ -19,7 +17,6 @@ class PlayState {
       this.blck = this.add.sprite(x - 64,y - 32,'blck');
       this.blck = this.add.sprite(x - 32,y - 32,'blck');
       this.blck = this.add.sprite(x,y - 32,'blck');
-      this.stpvrt = this.add.sprite(x - 64, y - 32, 'stpvrt');
   }
 vert(x, y) {
       this.blck1 = this.add.sprite(x - 32,y - 32,'blck');
@@ -53,14 +50,17 @@ vert(x, y) {
   
   update() {
     // Game logic
-   /*     if (this.cursors.left.isDown) {
+    if (this.cursors.left.isDown) {
       this.player.x -= 4;
-    };
+    }
     if (this.cursors.right.isDown) {
       this.player.x += 5;
-    };*/
+    }
+    game.physics.arcade.collide(this.blck, this.player, this.handleCollision);
   }
-  //game.physics.arcade.collide(this.blck)
+  handleCollision() {
+    this.player.y = 0
+  }
  
 }
 var game = new Phaser.Game(800,600);
