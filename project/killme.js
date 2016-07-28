@@ -34,11 +34,11 @@ vert(x, y) {
     this.background = this.add.tileSprite(1,1,800,600,'bckgr', 10);
     
     //player
-    this.player = this.add.sprite(300,240, 'sqhd');
+    /*this.player = this.add.sprite(300,240, 'sqhd');
     game.physics.arcade.enable(this.player);
     this.player.body.collideWorldBounds = true
     this.player.body.bounce.setTo(0.3);
-    this.player.body.drag.setTo(3000);
+    this.player.body.drag.setTo(3000);*/
     //block
     this.hort(400,300);
     this.vert(400,300);
@@ -50,12 +50,12 @@ vert(x, y) {
   
   update() {
     // Game logic
-        if (this.cursors.left.isDown) {
+   /*     if (this.cursors.left.isDown) {
       this.player.x -= 4;
     };
     if (this.cursors.right.isDown) {
       this.player.x += 5;
-    };
+    };*/
   }
   //game.physics.arcade.collide(this.blck)
  
