@@ -34,11 +34,11 @@ vert(x, y) {
     this.background = this.add.tileSprite(1,1,800,600,'bckgr', 10);
     
     //player
-    /*this.player = this.add.sprite(300,240, 'sqhd');
+    this.player = this.add.sprite(300,240, 'sqhd');
     game.physics.arcade.enable(this.player);
     this.player.body.collideWorldBounds = true
     this.player.body.bounce.setTo(0.3);
-    this.player.body.drag.setTo(3000);*/
+    this.player.body.drag.setTo(3000);
     //block
     this.hort(400,300);
     this.vert(400,300);
