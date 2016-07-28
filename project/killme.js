@@ -26,6 +26,7 @@ vert(x, y) {
       this.blck1 = this.add.sprite(x - 32,y - 64,'blck');
       this.blck1 = this.add.sprite(x - 32,y,'blck');
       this.stphrt = this.add.sprite(x - 31, y - 63, 'stphrt');
+      this.stphrt = this.add.sprite(x - 31, y + 1, 'stphrt');
   }
     
   create() {
@@ -48,6 +49,8 @@ vert(x, y) {
     this.vert(400,300);
     game.physics.arcade.enable(this.blck);
     game.physics.arcade.enable(this.blck1);
+    game.physics.arcade.enable(this.stpvrt);
+    game.physics.arcade.enable(this.stphrt);
  
     //creating the game scene
   }
