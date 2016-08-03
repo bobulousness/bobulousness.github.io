@@ -80,7 +80,22 @@ vert(x, y) {
     game.physics.arcade.enable(this.stphrtt);
     //creating the game scene
   }
-  
+  handleCollision() {
+    this.player.body.velocity.y += 200;
+    //this.player.body.velocity.
+  }
+  handleCollisiont() {
+    this.player.body.velocity.y -= 200;
+    //this.player.body.velocity.
+  }
+  handleCollisionl() {
+    this.player.body.velocity.x += 200;
+    //this.player.body.velocity.
+  }
+  handleCollisionr() {
+    this.player.body.velocity.x -= 200;
+    //this.player.body.velocity.
+  }
   update() {
     // Game logic
     if (this.cursors.left.isDown) {
@@ -103,22 +118,7 @@ vert(x, y) {
     //right
     game.physics.arcade.collide(this.stpvrt, this.player, this.handleCollisionr, null, this.player);
   }
-  handleCollision() {
-    this.player.body.velocity.y += 200;
-    //this.player.body.velocity.
-  }
-  handleCollisiont() {
-    this.player.body.velocity.y -= 200;
-    //this.player.body.velocity.
-  }
-  handleCollisionl() {
-    this.player.body.velocity.x += 200;
-    //this.player.body.velocity.
-  }
-  handleCollisionr() {
-    this.player.body.velocity.x -= 200;
-    //this.player.body.velocity.
-  }
+
  
 }
 var game = new Phaser.Game(800,600);
