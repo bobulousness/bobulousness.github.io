@@ -89,7 +89,7 @@ vert(x, y) {
       
     }
     if (this.cursors.up.isDown) {
-      this.player.body.velocity.x = -200;
+      this.player.body.velocity.y = -200;
     }
     //collisions
     //bottom
