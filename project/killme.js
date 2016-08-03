@@ -86,7 +86,7 @@ vert(x, y) {
     }
     if (this.cursors.right.isDown) {
       this.player.body.velocity.x += 3;
-      }
+      
     }
     if (this.cursors.up.isDown) {
       this.player.body.velocity.x = -200;
