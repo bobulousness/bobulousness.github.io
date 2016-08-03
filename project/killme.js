@@ -1,6 +1,6 @@
 'use strict';
 class PlayState {
-var player;
+
   init() {
     //creating variables
 
