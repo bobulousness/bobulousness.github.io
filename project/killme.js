@@ -107,7 +107,7 @@ vert(x, y) {
     //this.player.body.velocity.
   }
   handleCollisiont() {
-    this.player.body.velocity.y += 200;
+    this.player.body.velocity.y -= 200;
     //this.player.body.velocity.
   }
   handleCollisionl() {
@@ -115,7 +115,7 @@ vert(x, y) {
     //this.player.body.velocity.
   }
   handleCollisionr() {
-    this.player.body.velocity.x += 200;
+    this.player.body.velocity.x -= 200;
     //this.player.body.velocity.
   }
  
