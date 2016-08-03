@@ -52,22 +52,7 @@ vert(x, y) {
       this.stpvrt = this.add.sprite(x + 1, y - 51, 'stpvrt');
       this.stpvrt = this.add.sprite(x + 1, y - 10, 'stpvrt');
   }
-  handleCollision() {
-    this.player.body.velocity.y += 200;
-    //this.player.body.velocity.
-  }
-  handleCollisiont() {
-    this.player.body.velocity.y -= 200;
-    //this.player.body.velocity.
-  }
-  handleCollisionl() {
-    this.player.body.velocity.x += 200;
-    //this.player.body.velocity.
-  }
-  handleCollisionr() {
-    this.player.body.velocity.x -= 200;
-    //this.player.body.velocity.
-  }
+
   create() {
     //physics
     game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -114,11 +99,31 @@ vert(x, y) {
     //top
     game.physics.arcade.collide(this.stphrt, this.player, this.handleCollisiont, null, this.player);
     //left
-    game.physics.arcade.collide(this.stpvrtl, this.player, this.handleCollisionl,null, this.player);
+    game.physics.arcade.collide(this.stpvrtl, this.player, this.handleCollisionl, null, this.player);
     //right
     game.physics.arcade.collide(this.stpvrt, this.player, this.handleCollisionr, null, this.player);
   }
-
+  //collisions
+  //bottom
+  handleCollision() {
+    this.player.body.velocity.y += 200;
+    //this.player.body.velocity.
+  }
+  //top
+  handleCollisiont() {
+    this.player.body.velocity.y -= 200;
+    //this.player.body.velocity.
+  }
+  //left
+  handleCollisionl() {
+    this.player.body.velocity.x -= 200;
+    //this.player.body.velocity.
+  }
+  //right
+  handleCollisionr() {
+    this.player.body.velocity.x += 200;
+    //this.player.body.velocity.
+  }
  
 }
 var game = new Phaser.Game(800,600);
