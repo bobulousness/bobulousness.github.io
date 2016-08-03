@@ -82,12 +82,12 @@ vert(x, y) {
   update() {
     // Game logic
     if (this.cursors.left.isDown) {
-      this.player.velocity.x -= 3;
+      this.player.body.velocity.x -= 3;
     }
     if (this.cursors.right.isDown) {
-      this.player.velocity.x += 3;
+      this.player.body.velocity.x += 3;
       if (this.cursors.right.isUp) {
-        this.player.velocity.x += 1
+        this.player.body.velocity.x += 1
       }
     }
     if (this.cursors.up.isDown) {
