@@ -73,8 +73,6 @@ vert(x, y) {
     this.vert(400,300);
     //game.physics.arcade.enable(this.blck);
     game.physics.arcade.enable(this.blck1);
-    game.physics.arcade.enable(this.stpvrt);
-    game.physics.arcade.enable(this.stphrt);
  
     //creating the game scene
   }
@@ -103,6 +101,18 @@ vert(x, y) {
   }
   handleCollision() {
     this.player.body.velocity.y += 200;
+    //this.player.body.velocity.
+  }
+  handleCollisiont() {
+    this.player.body.velocity.y += 200;
+    //this.player.body.velocity.
+  }
+  handleCollisionl() {
+    this.player.body.velocity.x += 200;
+    //this.player.body.velocity.
+  }
+  handleCollisionr() {
+    this.player.body.velocity.x += 200;
     //this.player.body.velocity.
   }
  
