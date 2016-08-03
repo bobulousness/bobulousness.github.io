@@ -52,7 +52,22 @@ vert(x, y) {
       this.stpvrt = this.add.sprite(x + 1, y - 51, 'stpvrt');
       this.stpvrt = this.add.sprite(x + 1, y - 10, 'stpvrt');
   }
-    
+  handleCollision() {
+    this.player.body.velocity.y += 200;
+    //this.player.body.velocity.
+  }
+  handleCollisiont() {
+    this.player.body.velocity.y -= 200;
+    //this.player.body.velocity.
+  }
+  handleCollisionl() {
+    this.player.body.velocity.x += 200;
+    //this.player.body.velocity.
+  }
+  handleCollisionr() {
+    this.player.body.velocity.x -= 200;
+    //this.player.body.velocity.
+  }
   create() {
     //physics
     game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -80,22 +95,7 @@ vert(x, y) {
     game.physics.arcade.enable(this.stphrtt);
     //creating the game scene
   }
-  handleCollision() {
-    this.player.body.velocity.y += 200;
-    //this.player.body.velocity.
-  }
-  handleCollisiont() {
-    this.player.body.velocity.y -= 200;
-    //this.player.body.velocity.
-  }
-  handleCollisionl() {
-    this.player.body.velocity.x += 200;
-    //this.player.body.velocity.
-  }
-  handleCollisionr() {
-    this.player.body.velocity.x -= 200;
-    //this.player.body.velocity.
-  }
+
   update() {
     // Game logic
     if (this.cursors.left.isDown) {
