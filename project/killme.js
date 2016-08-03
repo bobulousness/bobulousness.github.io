@@ -88,7 +88,8 @@ vert(x, y) {
       this.player.x += 5;
     }
     if (this.cursors.up.isDown) {
-      this.player.body.velocity.y = 200;
+      this.player.body.velocity.y = -200;
+      
     }
     game.physics.arcade.collide(this.blck, this.player, this.handleCollision);
   }
