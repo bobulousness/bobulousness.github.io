@@ -102,7 +102,7 @@ vert(x, y) {
     game.physics.arcade.collide(this.stpvrt, this.player, this.handleCollisionr);
   }
   handleCollisionb() {
-    this.player.body.y += 1;
+    this.player.y += 1;
     //this.player.body.velocity.
   }
  
