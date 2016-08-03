@@ -67,6 +67,7 @@ vert(x, y) {
     this.player.body.collideWorldBounds = true
     this.player.body.bounce.setTo(0.3);
     this.player.body.drag.setTo(3000);
+    this.player.body.gravity.set(0,180)
     //block
     //this.hort(400,300);
     this.vert(400,300);
