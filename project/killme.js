@@ -66,7 +66,7 @@ vert(x, y) {
     game.physics.arcade.enable(this.player);
     this.player.body.collideWorldBounds = true
     this.player.body.bounce.setTo(0.3);
-    this.player.body.drag.setTo(3000);
+    //this.player.body.drag.setTo(3000);
     this.player.body.gravity.set(0,180);
     this.player.body.velocity.setTo(100,100);
     //block
