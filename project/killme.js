@@ -73,7 +73,10 @@ vert(x, y) {
     this.vert(400,300);
     //game.physics.arcade.enable(this.blck);
     game.physics.arcade.enable(this.blck1);
- 
+    game.physics.arcade.enable(this.stpvrt);
+    game.physics.arcade.enable(this.stpvrtl);
+    game.physics.arcade.enable(this.stphrt);
+    game.physics.arcade.enable(this.stphrtt);
     //creating the game scene
   }
   
