@@ -103,7 +103,7 @@ vert(x, y) {
   }
   handleCollisionb() {
     this.player.body.y += 1;
-    this.player.body.velocity.
+    //this.player.body.velocity.
   }
  
 }
