@@ -110,7 +110,7 @@ vert(x, y) {
     //this.player.body.velocity.
   }
   //top
-  handleCollisiont() {
+  /*handleCollisiont() {
     this.player.body.velocity.y -= 200;
     //this.player.body.velocity.
   }
@@ -123,7 +123,7 @@ vert(x, y) {
   handleCollisionr() {
     this.player.body.velocity.x += 200;
     //this.player.body.velocity.
-  }
+  }*/
  
 }
 var game = new Phaser.Game(800,600);
