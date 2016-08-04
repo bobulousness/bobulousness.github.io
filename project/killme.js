@@ -95,13 +95,13 @@ vert(x, y) {
     }
     //collisions
     //bottom
-    game.physics.arcade.collide(this.stphrtt, this.player, this.handleCollision, null, this.player);
+    game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollision, null, this.player);
     //top
-    game.physics.arcade.collide(this.stphrt, this.player, this.handleCollisiont, null, this.player);
+    game.physics.arcade.collide(this.player, this.stphrt, this.handleCollisiont, null, this.player);
     //left
-    game.physics.arcade.collide(this.stpvrtl, this.player, this.handleCollisionl, null, this.player);
+    game.physics.arcade.collide(this.player, this.stpvrtl, this.handleCollisionl, null, this.player);
     //right
-    game.physics.arcade.collide(this.stpvrt, this.player, this.handleCollisionr, null, this.player);
+    game.physics.arcade.collide(this.player, this.stpvrt, this.handleCollisionr, null, this.player);
   }
   //collisions
   //bottom
