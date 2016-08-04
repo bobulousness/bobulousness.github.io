@@ -65,6 +65,7 @@ vert(x, y) {
     //player
     this.player = this.add.sprite(300,240, 'sqhd');
     game.physics.arcade.enable(this.player);
+    
     this.player.body.collideWorldBounds = true
     this.player.body.bounce.setTo(0.3);
     this.player.body.drag.setTo(30);
@@ -95,7 +96,7 @@ vert(x, y) {
     }
     //collisions
     //bottom
-    game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont, null, this.player);
+    game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont);
     //top
     /*game.physics.arcade.collide(this.player, this.stphrt, this.handleCollision, null, this.player);
     //left
