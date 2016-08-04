@@ -92,7 +92,6 @@ vert(x, y) {
     if (this.cursors.up.isDown) {
       this.player.body.velocity.y -= 200;
     }
-    console.log(this.player);
     //collisions
     //bottom
     game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont);
