@@ -2,7 +2,6 @@
 class PlayState {
 
   init() {
-    var player;
     //creating variables
 
   }
