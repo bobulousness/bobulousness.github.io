@@ -62,10 +62,10 @@ vert(x, y) {
     this.background = this.add.tileSprite(1,1,800,600,'bckgr', 10);
     
     //player
-    this.player = this.add.sprite(500,300, 'sqhd');
+    this.player = this.add.sprite(400,500, 'sqhd');
     game.physics.arcade.enable(this.player);
     console.log(this.player);
-    this.player.body.collideWorldBounds = true
+    this.player.body.collideWorldBounds = true;
     this.player.body.bounce.setTo(0.3);
     this.player.body.drag.setTo(30);
     this.player.body.gravity.set(0,180);
@@ -83,16 +83,16 @@ vert(x, y) {
 
   update() {
     // Game logic
-    /*if (this.cursors.left.isDown) {
+    if (this.cursors.left.isDown) {
       this.player.body.velocity.x -= 3;
     }
     if (this.cursors.right.isDown) {
       this.player.body.velocity.x += 3;
-      
     }
     if (this.cursors.up.isDown) {
-      this.player.body.velocity.y = -200;
-    }*/
+      this.player.body.velocity.y -= 200;
+    }
+    console.log(this.player);
     //collisions
     //bottom
     game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont);
@@ -103,6 +103,7 @@ vert(x, y) {
     //right
     game.physics.arcade.collide(this.player, this.stpvrt, this.handleCollisionr, null, this.player);*/
   }
+  
   //collisions
   //bottom
   handleCollisiont() {
