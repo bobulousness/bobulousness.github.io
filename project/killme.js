@@ -91,8 +91,10 @@ vert(x, y) {
       this.player.body.velocity.x += 3;
     }
     if (this.cursors.up.isDown) {
-      this.player.body.velocity.y -= 200;
+      this.player.body.velocity.y = -200;
     }
+    this.stphrtt.body.velocity.y = 0
+    this.stphrtt.body.velocity.x = 0
     //collisions
     //bottom
     game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont);
