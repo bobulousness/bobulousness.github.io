@@ -109,9 +109,9 @@ vert(x, y) {
   //collisions
   //bottom
   handleCollisiont(p,s) {
-    console.log(p);
+    s.body.velocity.y = 0;
     p.body.velocity.y -= 200;
-    
+    s.body.velocity.y = 0;
     
     //this.player.body.velocity.
   }
