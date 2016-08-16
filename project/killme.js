@@ -78,7 +78,7 @@ vert(x, y) {
     //game.physics.arcade.enable(this.stpvrtl);
     //game.physics.arcade.enable(this.stphrt);
     game.physics.arcade.enable(this.stphrtt);
-    this.stphrtt.body.bounce.setTo(-20);
+    this.stphrtt.body.bounce.setTo(-200);
     //creating the game scene
   }
 
