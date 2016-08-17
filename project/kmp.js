@@ -25,16 +25,16 @@ class PlayState {
       this.stpvrt = this.add.sprite(x + 31, y - 31, 'stpvrt');
       //top bumpers
       this.stphrtt = this.add.sprite(x - 31, y - 31, 'stphrt');
-      this.stphrtt = this.add.sprite(x - 63, y - 31, 'stphrt');
-      this.stphrtt = this.add.sprite(x + 1, y - 31, 'stphrt');
-      this.stphrtt = this.add.sprite(x - 51, y - 31, 'stphrt');
-      this.stphrtt = this.add.sprite(x - 10, y - 31, 'stphrt');
+     // this.stphrtt = this.add.sprite(x - 63, y - 31, 'stphrt');
+      //this.stphrtt = this.add.sprite(x + 1, y - 31, 'stphrt');
+     // this.stphrtt = this.add.sprite(x - 51, y - 31, 'stphrt');
+      //this.stphrtt = this.add.sprite(x - 10, y - 31, 'stphrt');
       //bottom bumpers
       this.stphrt = this.add.sprite(x - 31, y, 'stphrt');
-      this.stphrt = this.add.sprite(x - 63, y, 'stphrt');
-      this.stphrt = this.add.sprite(x + 1, y, 'stphrt');
+      //this.stphrt = this.add.sprite(x - 63, y, 'stphrt');
+      //this.stphrt = this.add.sprite(x + 1, y, 'stphrt');
       //this.stphrt = this.add.sprite(x - 51, y, 'stphrt');
-      this.stphrt = this.add.sprite(x - 10, y, 'stphrt');
+      //this.stphrt = this.add.sprite(x - 10, y, 'stphrt');
   }
 vert(x, y) {
   //visual blocks
