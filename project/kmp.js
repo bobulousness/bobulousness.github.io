@@ -33,7 +33,7 @@ class PlayState {
       this.stphrt = this.add.sprite(x - 31, y, 'stphrt');
       this.stphrt = this.add.sprite(x - 63, y, 'stphrt');
       this.stphrt = this.add.sprite(x + 1, y, 'stphrt');
-      this.stphrt = this.add.sprite(x - 51, y, 'stphrt');
+      //this.stphrt = this.add.sprite(x - 51, y, 'stphrt');
       this.stphrt = this.add.sprite(x - 10, y, 'stphrt');
   }
 vert(x, y) {
@@ -70,7 +70,6 @@ vert(x, y) {
     //player
     this.player = this.add.sprite(400,500, 'sqhd');
     game.physics.arcade.enable(this.player);
-    console.log(this.player);
     this.player.body.collideWorldBounds = true;
     this.player.body.bounce.setTo(.01);
     this.player.body.drag.setTo(30);
