@@ -70,7 +70,7 @@ vert(x, y) {
     this.player.body.drag.setTo(30);
     this.player.body.gravity.set(0,180);
     //block
-    //this.hort(400,300);
+    this.hort(400,300);
     this.vert(400,300);
     game.physics.arcade.enable(this.stpvrt);
     game.physics.arcade.enable(this.stpvrtl);
@@ -111,7 +111,7 @@ vert(x, y) {
   //top
   handleCollisiont(p,s) {
     p.body.velocity.y -= 1;
-    p.body.y -= .1
+    p.body.y -= .1;
   }
   //bottom
   handleCollision(p,s) {
@@ -130,5 +130,5 @@ vert(x, y) {
 }
 
 var game = new Phaser.Game(800,600);
-game.state.add('Pla', PlayState);
-game.state.start('Pla');
+game.state.add('Play', PlayState);
+game.state.start('Play');
