@@ -103,11 +103,11 @@ vert(x, y) {
     //bottom
     game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont);
     //top
-    game.physics.arcade.collide(this.player, this.stphrt, this.handleCollision,);
+    game.physics.arcade.collide(this.player, this.stphrt, this.handleCollision);
     //left
-    game.physics.arcade.collide(this.player, this.stpvrtl, this.handleCollisionl,);
+    game.physics.arcade.collide(this.player, this.stpvrtl, this.handleCollisionl);
     //right
-    game.physics.arcade.collide(this.player, this.stpvrt, this.handleCollisionr,);
+    game.physics.arcade.collide(this.player, this.stpvrt, this.handleCollisionr);
   }
   
   //collisions
