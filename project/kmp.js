@@ -34,7 +34,7 @@ class PlayState {
       //this.stphrt = this.add.sprite(x - 63, y, 'stphrt');
       this.stphrt = this.add.sprite(x + 1, y, 'stphrt');
       //this.stphrt = this.add.sprite(x - 51, y, 'stphrt');
-      //this.stphrt = this.add.sprite(x - 10, y, 'stphrt');
+      this.stphrt = this.add.sprite(x - 10, y, 'stphrt');
   }
 vert(x, y) {
   //visual blocks
