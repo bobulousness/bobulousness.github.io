@@ -42,7 +42,8 @@ vert(x, y) {
     this.player = this.add.sprite(400,500, 'sqhd');
     game.physics.arcade.enable(this.player);
     this.player.body.collideWorldBounds = true;
-    this.player.body.bounce.setTo(.01);
+    this.player.body.bounce.x.setTo(.01);
+    this.player.body.bounce.y.setTo(.01);
     this.player.body.drag.setTo(30);
     this.player.body.gravity.set(0,180);
     //block
@@ -86,10 +87,9 @@ vert(x, y) {
   }
   
   //collisions
-  //top
-
-  //bottom
-
+blckp(p,s) {
+  
+}
  
  
 }
