@@ -75,15 +75,15 @@ vert(x, y) {
     //stoppers physics enable
     game.physics.arcade.enable(this.blck);
     game.physics.arcade.enable(this.blck1);
-    game.physics.arcade.enable(this.stpvrt);
+    /*game.physics.arcade.enable(this.stpvrt);
     game.physics.arcade.enable(this.stpvrtl);
-    game.physics.arcade.enable(this.stphrt);
+    game.physics.arcade.enable(this.stphrt);*/
     game.physics.arcade.enable(this.stphrtt);
     //stoppers immovable enable
     this.stphrtt.body.immovable = true;
-    this.stphrt.body.immovable = true;
+    /*this.stphrt.body.immovable = true;
     this.stpvrtl.body.immovable = true;
-    this.stpvrt.body.immovable = true;
+    this.stpvrt.body.immovable = true;*/
     //creating the game scene
   }
 
@@ -99,14 +99,14 @@ vert(x, y) {
       this.player.body.velocity.y = -200;
     }
     //collisions
-    //bottom
-    game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont);
     //top
-    game.physics.arcade.collide(this.player, this.stphrt, this.handleCollision);
+    game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont);
+    //bottom
+    /*game.physics.arcade.collide(this.player, this.stphrt, this.handleCollision);
     //left
     game.physics.arcade.collide(this.player, this.stpvrtl, this.handleCollisionl);
     //right
-    game.physics.arcade.collide(this.player, this.stpvrt, this.handleCollisionr);
+    game.physics.arcade.collide(this.player, this.stpvrt, this.handleCollisionr);*/
   }
   
   //collisions
@@ -115,7 +115,7 @@ vert(x, y) {
     p.body.velocity.y -= 200;
   }
   //bottom
-  handleCollision(j,u) {
+  /*handleCollision(j,u) {
     j.body.velocity.y += 200;
   }
   //left
