@@ -21,20 +21,20 @@ class PlayState {
       this.blck = this.add.sprite(x - 32,y - 32,'blck');
       this.blck = this.add.sprite(x,y - 32,'blck');
       //left and rights side bumpers
-      this.stpvrtl = this.add.sprite(x - 63, y - 31, 'stpvrt');
-      this.stpvrt = this.add.sprite(x + 31, y - 31, 'stpvrt');
+      //this.stpvrtl = this.add.sprite(x - 63, y - 31, 'stpvrt');
+      //this.stpvrt = this.add.sprite(x + 31, y - 31, 'stpvrt');
       //top bumpers
 /*      this.stphrtt = this.add.sprite(x - 31, y - 31, 'stphrt');
       this.stphrtt = this.add.sprite(x - 63, y - 31, 'stphrt');
       this.stphrtt = this.add.sprite(x + 1, y - 31, 'stphrt');
       this.stphrtt = this.add.sprite(x - 51, y - 31, 'stphrt');
-      this.stphrtt = this.add.sprite(x - 10, y - 31, 'stphrt');*/
+      this.stphrtt = this.add.sprite(x - 10, y - 31, 'stphrt');
       //bottom bumpers
       this.stphrt = this.add.sprite(x - 31, y, 'stphrt');
       this.stphrt = this.add.sprite(x - 63, y, 'stphrt');
-      //this.stphrt = this.add.sprite(x + 1, y, 'stphrt');
-      //this.stphrt = this.add.sprite(x - 51, y, 'stphrt');
-      //this.stphrt = this.add.sprite(x - 10, y, 'stphrt');
+      this.stphrt = this.add.sprite(x + 1, y, 'stphrt');
+      this.stphrt = this.add.sprite(x - 51, y, 'stphrt');
+      this.stphrt = this.add.sprite(x - 10, y, 'stphrt');*/
   }
 vert(x, y) {
   //visual blocks
@@ -42,7 +42,7 @@ vert(x, y) {
       this.blck = this.add.sprite(x - 32,y - 64,'blck');
       this.blck = this.add.sprite(x - 32,y,'blck');
       //top and bottom bumpers
-      this.stphrtt = this.add.sprite(x - 31, y - 63, 'stphrt');
+      /*this.stphrtt = this.add.sprite(x - 31, y - 63, 'stphrt');
       this.stphrt = this.add.sprite(x - 31, y + 31, 'stphrt');
       //left side bumpers
       this.stpvrtl = this.add.sprite(x - 31, y - 31, 'stpvrt');
@@ -55,7 +55,7 @@ vert(x, y) {
       this.stpvrt = this.add.sprite(x + 1, y - 63, 'stpvrt');
       this.stpvrt = this.add.sprite(x + 1, y, 'stpvrt');
       this.stpvrt = this.add.sprite(x + 1, y - 51, 'stpvrt');
-      this.stpvrt = this.add.sprite(x + 1, y - 10, 'stpvrt');
+      this.stpvrt = this.add.sprite(x + 1, y - 10, 'stpvrt');*/
   }
 
   create() {
@@ -77,14 +77,15 @@ vert(x, y) {
     //block
     this.hort(400,300);
     //this.vert(400,300);
-    game.physics.arcade.enable(this.stpvrt);
+    /*game.physics.arcade.enable(this.stpvrt);
     game.physics.arcade.enable(this.stpvrtl);
     game.physics.arcade.enable(this.stphrt);
-    //game.physics.arcade.enable(this.stphrtt);
+    game.physics.arcade.enable(this.stphrtt);
     this.stpvrtl.body.immovable = true;
     this.stpvrt.body.immovable = true;
-    //this.stphrtt.body.immovable = true;
-    this.stphrt.body.immovable = true;
+    this.stphrtt.body.immovable = true;
+    this.stphrt.body.immovable = true;*/
+    this.blck.body.immovable = true;
     //creating the game scene
   }
 
@@ -100,21 +101,21 @@ vert(x, y) {
       this.player.body.velocity.y = -200;
     }
     //collisions
+    game.physics.arcade.collide(this.player, this.blck, this.handleCollision);
     //bottom
-    //game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont);
+    /*game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont);
     //top
     game.physics.arcade.collide(this.player, this.stphrt, this.handleCollision);
     //left
     game.physics.arcade.collide(this.player, this.stpvrtl, this.handleCollisionl);
     //right
-    game.physics.arcade.collide(this.player, this.stpvrt, this.handleCollisionr);
+    game.physics.arcade.collide(this.player, this.stpvrt, this.handleCollisionr);*/
   }
   
   //collisions
   //top
   handleCollisiont(p,s) {
-    p.body.velocity.y -= 1;
-    p.body.y -= .1;
+  
   }
   //bottom
   handleCollision(p,s) {
