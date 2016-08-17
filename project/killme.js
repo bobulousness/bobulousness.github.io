@@ -108,28 +108,23 @@ vert(x, y) {
   }
   
   //collisions
-  //bottom
-  handleCollisiont(p,s) {
-    s.body.velocity.y = 0;
-    p.body.velocity.y -= 200;
-    s.body.velocity.y = 0;
-    
-    //this.player.body.velocity.
-  }
   //top
-  /*handleCollision() {
-    this.player.body.velocity.y -= 200;
-    //this.player.body.velocity.
+  handleCollisiont(p,s) {
+    p.body.velocity.y -= 200;
+  }
+  //bottom
+  handleCollision(p,s) {
+    p.body.velocity.y -= 200;
   }
   //left
-  handleCollisionl() {
-    this.player.body.velocity.x -= 200;
-    //this.player.body.velocity.
+  handleCollisionl(p,s) {
+    p.body.velocity.x -= 200;
+ 
   }
   //right
-  handleCollisionr() {
-    this.player.body.velocity.x += 200;
-    //this.player.body.velocity.
+ /* handleCollisionr(p,s) {
+    p.body.velocity.x += 200;
+
   }*/
  
 }
