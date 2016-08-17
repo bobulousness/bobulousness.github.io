@@ -129,5 +129,5 @@ vert(x, y) {
 }
 
 var game = new Phaser.Game(800,600);
-game.state.add('Play', PlayState);
-game.state.start('Play');
+game.state.add('Pla', PlayState);
+game.state.start('Pla');
