@@ -18,15 +18,14 @@ class PlayState {
  hort(x, y) {
       //visual blocks
       this.blck = this.add.sprite(x - 64,y - 32,'blck');
-      this.blck = this.add.sprite(x - 32,y - 32,'blck');
-      this.blck = this.add.sprite(x,y - 32,'blck');
+      this.blck1 = this.add.sprite(x - 32,y - 32,'blck');
+      this.blck2 = this.add.sprite(x,y - 32,'blck');
   }
 vert(x, y) {
   //visual blocks
-      this.blck = this.add.sprite(x - 32,y - 32,'blck');
-      this.blck = this.add.sprite(x - 32,y - 64,'blck');
-      this.blck = this.add.sprite(x - 32,y,'blck');
-
+      this.blck3 = this.add.sprite(x - 32,y - 64,'blck');
+      this.blck4 = this.add.sprite(x - 32,y - 32,'blck');
+      this.blck5 = this.add.sprite(x - 32,y,'blck');
   }
 
   create() {
@@ -50,6 +49,9 @@ vert(x, y) {
     this.vert(400,300);
     game.physics.arcade.enable(this.blck);
     this.blck.body.immovable = true;
+    this.blck.body.immovable = true;
+    this.blck.body.immovable = true;
+    this.blck.body.immovable = true;this.blck.body.immovable = true;
     //creating the game scene
   }
 
