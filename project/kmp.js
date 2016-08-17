@@ -73,11 +73,14 @@ vert(x, y) {
     //this.hort(400,300);
     this.vert(400,300);
     game.physics.arcade.enable(this.stpvrt);
-    //game.physics.arcade.enable(this.stpvrtl);
-    //game.physics.arcade.enable(this.stphrt);
+    game.physics.arcade.enable(this.stpvrtl);
+    game.physics.arcade.enable(this.stphrt);
     game.physics.arcade.enable(this.stphrtt);
     this.stphrtt.body.bounce.setTo(-200);
+    this.stpvrtl.body.immovable = true
+    this.stpvrt.body.immovable = true
     this.stphrtt.body.immovable = true
+    this.stphrt.body.immovable = true
     //creating the game scene
   }
 
@@ -98,11 +101,11 @@ vert(x, y) {
     //bottom
     game.physics.arcade.collide(this.player, this.stphrtt, this.handleCollisiont);
     //top
-    /*game.physics.arcade.collide(this.player, this.stphrt, this.handleCollision, null, this.player);
+    game.physics.arcade.collide(this.player, this.stphrt, this.handleCollision, null, this.player);
     //left
-    game.physics.arcade.collide(this.player, this.stpvrtl, this.handleCollisionl, null, this.player);*/
+    game.physics.arcade.collide(this.player, this.stpvrtl, this.handleCollisionl, null, this.player);
     //right
-    game.physics.arcade.collide(this.player, this.stpvrt, this.handleCollisionr, null, this.player);
+    //game.physics.arcade.collide(this.player, this.stpvrt, this.handleCollisionr, null, this.player);
   }
   
   //collisions
