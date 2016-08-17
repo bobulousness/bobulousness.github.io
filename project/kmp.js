@@ -46,8 +46,8 @@ vert(x, y) {
     this.player.body.drag.setTo(30);
     this.player.body.gravity.set(0,180);
     //block
-    this.hort(400,300);
-    //this.vert(400,300);
+    //this.hort(400,300);
+    this.vert(400,300);
     game.physics.arcade.enable(this.blck);
     this.blck.body.immovable = true;
     //creating the game scene
