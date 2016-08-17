@@ -23,9 +23,10 @@ class PlayState {
   }
 vert(x, y) {
   //visual blocks
-      this.blck3 = this.add.sprite(x - 32,y - 64,'blck');
-      this.blck4 = this.add.sprite(x - 32,y - 32,'blck');
+      this.blck3 = this.add.sprite(x - 32,y - 32,'blck');
+      this.blck4 = this.add.sprite(x - 32,y - 64,'blck');
       this.blck5 = this.add.sprite(x - 32,y,'blck');
+
   }
 
   create() {
@@ -48,10 +49,18 @@ vert(x, y) {
     //this.hort(400,300);
     this.vert(400,300);
     game.physics.arcade.enable(this.blck);
+    game.physics.arcade.enable(this.blck1);
+    game.physics.arcade.enable(this.blck2);
+    game.physics.arcade.enable(this.blck3);
+    game.physics.arcade.enable(this.blck4);
+    game.physics.arcade.enable(this.blck5);
+    
     this.blck.body.immovable = true;
-    this.blck.body.immovable = true;
-    this.blck.body.immovable = true;
-    this.blck.body.immovable = true;this.blck.body.immovable = true;
+    this.blck1.body.immovable = true;
+    this.blck2.body.immovable = true;
+    this.blck3.body.immovable = true;
+    this.blck4.body.immovable = true;
+    this.blck5.body.immovable = true;
     //creating the game scene
   }
 
@@ -68,6 +77,11 @@ vert(x, y) {
     }
     //collisions
     game.physics.arcade.collide(this.player, this.blck);
+    game.physics.arcade.collide(this.player, this.blck1);
+    game.physics.arcade.collide(this.player, this.blck2);
+    game.physics.arcade.collide(this.player, this.blck3);
+    game.physics.arcade.collide(this.player, this.blck4);
+    game.physics.arcade.collide(this.player, this.blck5);
   }
   
   //collisions
