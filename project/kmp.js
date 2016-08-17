@@ -65,7 +65,7 @@ vert(x, y) {
       this.player.body.velocity.y = -200;
     }
     //collisions
-    //game.physics.arcade.collide(this.player, this.blck, this.handleCollision);
+    game.physics.arcade.collide(this.player, this.blck);
   }
   
   //collisions
