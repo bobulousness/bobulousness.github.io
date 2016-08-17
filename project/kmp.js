@@ -111,7 +111,7 @@ vert(x, y) {
   //top
   handleCollisiont(p,s) {
     p.body.velocity.y -= 1;
-    p.body.y -= 1
+    p.body.y -= .1
   }
   //bottom
   handleCollision(p,s) {
