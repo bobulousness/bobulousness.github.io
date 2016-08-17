@@ -71,7 +71,7 @@ vert(x, y) {
     this.player.body.gravity.set(0,180);
     //block
     this.hort(400,300);
-    this.vert(400,300);
+    //this.vert(400,300);
     game.physics.arcade.enable(this.stpvrt);
     game.physics.arcade.enable(this.stpvrtl);
     game.physics.arcade.enable(this.stphrt);
