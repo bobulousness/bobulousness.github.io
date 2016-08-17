@@ -66,7 +66,7 @@ vert(x, y) {
     
     //background
     this.background = this.add.tileSprite(1,1,800,600,'bckgr', 10);
-    
+    this.blck = this.add.sprite(100,200,'blck');
     //player
     this.player = this.add.sprite(400,500, 'sqhd');
     game.physics.arcade.enable(this.player);
@@ -81,10 +81,10 @@ vert(x, y) {
     game.physics.arcade.enable(this.stpvrtl);
     game.physics.arcade.enable(this.stphrt);
     game.physics.arcade.enable(this.stphrtt);
-    this.stpvrtl.body.immovable = true
-    this.stpvrt.body.immovable = true
-    this.stphrtt.body.immovable = true
-    this.stphrt.body.immovable = true
+    this.stpvrtl.body.immovable = true;
+    this.stpvrt.body.immovable = true;
+    this.stphrtt.body.immovable = true;
+    this.stphrt.body.immovable = true;
     //creating the game scene
   }
 
