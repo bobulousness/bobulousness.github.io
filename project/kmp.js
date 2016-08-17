@@ -66,7 +66,7 @@ vert(x, y) {
     game.physics.arcade.enable(this.player);
     console.log(this.player);
     this.player.body.collideWorldBounds = true;
-    this.player.body.bounce.setTo(0);
+    this.player.body.bounce.setTo(30);
     this.player.body.drag.setTo(30);
     this.player.body.gravity.set(0,180);
     //block
@@ -76,7 +76,6 @@ vert(x, y) {
     game.physics.arcade.enable(this.stpvrtl);
     game.physics.arcade.enable(this.stphrt);
     game.physics.arcade.enable(this.stphrtt);
-    this.stphrtt.body.bounce.setTo(-200);
     this.stpvrtl.body.immovable = true
     this.stpvrt.body.immovable = true
     this.stphrtt.body.immovable = true
