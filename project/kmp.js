@@ -17,8 +17,8 @@ class PlayState {
 
  hort(x, y) {
       //visual blocks
-      this.blck = this.add.sprite(x - 64,y - 32,'blck');
-      this.blck1 = this.add.sprite(x - 32,y - 32,'blck');
+      this.blck = this.add.sprite(x - 65,y - 32,'blck');
+      this.blck = this.add.sprite(x - 32,y - 32,'blck');
       this.blck2 = this.add.sprite(x,y - 32,'blck');
   }
 vert(x, y) {
