@@ -2,13 +2,14 @@
   <head>
     <p> welcome to the project 
     </p>
-    <button onclick="document.getElementById('response1').innerHTML = dial1()">I am happy to be chosen</button>
-    <button onclick="document.getElementById('response1').innerHTML = dial1()">wait what?</button>
+    <button id="1" onclick="document.getElementById('response1').innerHTML = dial1()">I am happy to be chosen</button>
+    <button id="1" onclick="document.getElementById('response1').innerHTML = dial1()">wait what?</button>
   </head>
   <body>
     <script>
       function dial1() {
-        return "please enter your identification number";
+        return "please enter your identification number" + <input type="text" name="idnum">;
+        document.getElementById("1").disabled = true;
       }
     </script>
     <p id = "response1"></p>
